@@ -1,0 +1,338 @@
+@font-face {
+ font-family: 'Caviar Dreams';
+ src: url(../fonts/CaviarDreams.woff);
+}
+@font-face {
+ font-family: 'Caviar Dreams';
+ src: url(../fonts/Caviar_Dreams_Bold.woff);
+ font-weight: bold;
+}
+@font-face {
+ font-family: 'Caviar Dreams';
+ src: url(../fonts/CaviarDreams_Italic.woff);
+ font-style: italic;
+}
+@font-face {
+ font-family: 'Caviar Dreams';
+ src: url(../fonts/CaviarDreams_BoldItalic.woff);
+ font-weight: bold;
+ font-style: italic;
+}
+body {
+ font-family: Arial;
+ margin: 0;
+ background-image:
+ repeating-linear-gradient(45deg, white, blanchedalmond 1mm);
+}
+
+p { font-size: 14pt; }
+ul {
+ font-size: 14pt;
+ list-style-type: square;
+}
+p.greeting { font-size: 24pt; }
+footer {text-align: right; }
+strong.italic-text {
+  font-style: italic;
+}
+.advertising { margin-left :30pt; }
+.promo-time-note {
+  font-size: 12pt;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.ol{font-size: 12pt;
+	   margin-top: 2pt;
+		 margin-bottom:2pt;
+    }
+div p{font-size: 12pt;
+	   margin-top: 2pt;
+		 margin-bottom:2pt;
+    }
+
+span {font-variant-numeric:oldstyle-nums;
+font-size:larger
+}
+table.price-list th, table.price-list td {
+ border: grey thin solid;
+ padding: 2pt;
+}
+table.catalog td {
+ border-bottom: black thin dotted;
+ padding: 3pt;
+}
+table.catalog img { width: 200px; }
+
+td, th {
+  text-align: center;
+}
+ thead {
+    background-color: grey;
+    color: white;
+  }
+ tfoot {
+text-align: right; 
+italic-text 
+  }
+ header nav div {
+	 background-color:blanchedalmond;
+  width: 200px;
+  padding: 20px;
+	display: table-cell;
+ }
+
+nav div, nav a {
+ font-size: 24pt;
+ margin: 10px 0px;
+}
+
+main { display: table-cell;}
+button {background-color:chocolate;
+color: #000;}
+.textarea-group {
+  text-align: left;
+  margin-bottom: 20px;}
+	table.catalog tr:last-child td {
+ border-bottom: none;
+}
+table.catalog .desc-first::first-letter {
+  font-size: 150%;
+  background-color: blanchedalmond;
+}
+ul li::marker {
+ font-size: 100%;
+ color: orange;
+}
+.price-list {
+  width: 20%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.price-list th,
+.price-list td {
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.price {
+  background-color: #f0f0f0;
+  text-align: right;
+  min-width: 80px;
+}
+
+.category-row th {
+  background-color:lightgrey;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+
+.total-note {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  padding-top: 10px;
+}
+
+table.catalog h3 {
+  font-family: 'Caviar Dreams', sans-serif; 
+  font-size: 32px;
+  font-variant-caps: all-small-caps;
+}
+i.icon-drink {
+ content: url(../images/drink.jpg);
+ height: 1em;
+}
+
+ .page-title h1 {
+  font-size: 28pt;
+  text-transform: uppercase;
+}
+
+.catalog h3 {
+  letter-spacing: 6pt;}
+	
+.catalog h3::after {
+  content: ":";
+}
+header { text-align: right; }
+header h1.header1 {
+  font: bold 48pt 'Caviar Dreams';
+  text-transform: uppercase;
+  letter-spacing: 18pt;
+  margin: 0;
+  padding: 12pt 8pt 0 0;
+  border-bottom: 12pt solid salmon;
+
+
+  background:
+    padding-box padding-box url(../images/sushiall.png) 160px 0 / auto 80% no-repeat,
+    padding-box padding-box url(../images/sushi.jpg) left 0 / auto 80% no-repeat,
+    radial-gradient(circle farthest-side at right, blanchedalmond, blanchedalmond 67%, white 90%);
+}
+header h1.header2 {
+ font: 36pt Verdana;
+ letter-spacing: 8pt;
+ margin: 0;
+ padding: 0 36pt 0 0;
+}
+div.container {
+ min-width: 768px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: url(../images/mate.jpg) 40px 600px / 220px auto no-repeat,
+    
+    rgba(255, 255, 255, 0.8); background-origin: padding-box;
+  background-clip: padding-box;
+
+}
+
+
+
+p.address {
+  font-family: 'Caviar Dreams', sans-serif;
+  font-style: italic;  
+  font-size: 20pt;  
+  
+  background-color: blanchedalmond;
+  border-bottom: 2pt solid salmon;
+   margin: 0;}
+p.copy {margin: 0;
+  padding-bottom: 40px;}
+
+
+
+
+ .promo-roman {
+  list-style: none;
+  counter-reset: promo-counter;
+  padding-left: 0;
+}
+
+ol.promo-roman li {
+  counter-increment: promo-counter;
+  position: relative;
+  padding-left: 30px; /
+}
+
+ol.promo-roman li::before {
+  content: counter(promo-counter, upper-roman) ".";
+  position: absolute;
+  left: 0;
+  color: orange;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.catalog td:first-child {
+  width: 33%;
+}
+nav a {
+ color: maroon;
+ text-decoration: none;
+ display: block;
+}
+nav a:active, nav a:hover {
+ color: blanchedalmond;
+ background-color: maroon;
+}
+nav.menu-wrapper {
+  background-color:blanchedalmond;
+ display: inline-block; }
+.food-img{ width: 100%; 
+  height: auto; 
+  object-fit: contain;
+}
+form {
+ width: min-content;
+ padding: 0 10pt;
+ margin-bottom: 10pt;
+ border: thin dotted orange;
+
+}
+input, select, textarea {
+ font: 12pt monospace;
+ border: medium solid orange;
+ border-radius: 5pt;
+ padding: 5pt;
+}
+input:required + span::after, select:required + span::after {
+ font: 24pt monospace;
+ content: '*';vertical-align: top;
+}
+
+input:user-invalid, select:user-invalid {
+ border-color: red;
+}
+
+
+form {
+ border: thin dotted orange;
+ border-radius: 0;
+}
+.custom-radio,
+.custom-checkbox {
+
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  
+  box-sizing: border-box;
+  width: 1ex;
+  height: 1ex;
+}
+.custom-radio {
+  border: 2px solid orange;
+  border-radius: 50%;
+	
+  background-color: transparent;}
+	.custom-checkbox {
+  border: 2px solid orange;
+  border-radius: 0;
+  background-color: transparent;
+}
+.custom-radio:checked {
+  background-color: orange;
+}
+
+
+.custom-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid orange;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.custom-checkbox:checked {
+  background-color: orange;
+}
+
+.table {
+ display: table;
+ border-collapse: collapse;
+ width: 100%;
+}
+.row { display: table-row; }
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<h2>Заказ блюд</h2>
+<link rel="stylesheet" href="../styles/2.1.css">
+
+<form action="mailto:order@yokogama.ru" method="post" enctype="text/plain">
+  <p>
+    <label for="name">Как к вам обращаться?</label><br>
+    <input type="text" name="name" id="name" required>
+  </p>
+
+  <p>
+    <label for="dishes">Что желаете заказать?</label><br>
+    <select name="dishes" id="dishes" size="6" multiple required>
+      <optgroup label="Суши">
+        <option value="chukka">Чукка</option>
+        <option value="maguro">Магуро</option>
+        <option value="tobiko">Тобико</option>
+      </optgroup>
+      <optgroup label="Сашими">
+        <option value="unagi">Унаги</option>
+        <option value="hamachi">Хамачи</option>
+      </optgroup>
+      <optgroup label="Роллы">
+        <option value="roll-kunsei-batakon">Кунсэй батакон</option>
+        <option value="roll-arigato">Аригато</option>
+        <option value="roll-mexican">Мексиканский</option>
+      </optgroup>
+    </select>
+  </p>
+
+  <p>
+    <label for="phone">Ваш телефон:</label><br>
+    <input type="tel" name="phone" id="phone" required>
+  </p>
+
+  <p>
+    <strong>Дополнительно</strong>
+  </p>
+
+  <p>
+    Упаковка:<br>
+    <label class="custom-radio-wrapper">
+      <input type="radio" name="package" id="package1" value="standard" class="custom-radio" checked>
+      <span class="custom-radio-text">Стандартная</span>
+    </label><br>
+
+    <label class="custom-radio-wrapper">
+      <input type="radio" name="package" id="package2" value="gift" class="custom-radio">
+      <span class="custom-radio-text">Подарочная</span>
+    </label><br>
+
+    <label class="custom-radio-wrapper">
+      <input type="radio" name="package" id="package3" value="eco" class="custom-radio">
+      <span class="custom-radio-text">Экологически чистая</span>
+    </label>
+  </p>
+
+  <p>
+    <label class="custom-checkbox-wrapper">
+      <input type="checkbox" name="urgent" id="urgent" class="custom-checkbox">
+      <span class="custom-checkbox-text">Срочный заказ</span>
+    </label>
+  </p>
+
+  <div class="textarea-group">
+    <label for="addenda">Примечания (необязательно)</label>
+    <div class="textarea-wrapper">
+      <textarea
+        name="addenda"
+        id="addenda"
+        rows="4"
+        placeholder="Например: позвоните перед доставкой, оставьте у двери и т.д."
+        class="textarea-field"></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="order-btn">
+    <img src="images/sushiall.png" width="40" height="50" alt="Заказать">
+    Заказать
+  </button>
+</form>
+
+<footer>
+  <p class="address">Наш адрес: ул. Зелёная, 17.</p>
+  <p class="copy">читатели книги</p>
+</footer>
